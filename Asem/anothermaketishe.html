@@ -1,0 +1,455 @@
+<html>
+    <head>
+        <style>
+            .top{
+                width: 100%;
+                height: 5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .nav{
+                display: flex;
+                align-items: center;
+                margin: 0rem 3rem;
+            }
+
+            .minima{
+                font-family: sans-serif;
+                font-weight: 400;
+                font-size: 2rem;
+                margin: 0rem 3rem;
+            }
+
+            .navfont{
+                font-size: 1.3rem;
+                font-family: sans-serif;
+                margin: 0rem 1rem;
+            }
+
+            .picture{
+                width: 100%;
+                height: 40rem;
+                background-image: url(https://images.pexels.com/photos/215/road-sky-clouds-cloudy.jpg?cs=srgb&dl=pexels-gratisography-215.jpg&fm=jpg);
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cleanminimal{
+                font-size: 1.8rem;
+                font-family: sans-serif;
+                margin: 1rem;
+            }
+
+            .exepteur{
+                font-family: sans-serif;
+                margin: 0rem 1rem;
+            }
+
+            .stayhere{
+                width: 11rem;
+                height: 2.5rem;
+                border-color: #000000;
+                border-radius: 30px;
+                border-width: 0rem;
+                margin: 2rem;
+                color: #ffffff;
+                background-color: #464646;
+                font-family: sans-serif;
+                font-size: 1rem;
+            }
+
+            .firstgrid{
+                display: grid;
+                width: 80%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                margin: 3% 10%;
+            }
+
+            .one{
+                background-image: url(https://img.icons8.com/pastel-glyph/2x/roller-brush.png);
+                width: 4rem;
+                height: 4rem;
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .two {
+                background-image: url(https://img.icons8.com/pastel-glyph/2x/clock.png);
+                width: 4rem;
+                height: 4rem;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .three{
+                background-image: url(https://image.flaticon.com/icons/png/512/130/130304.png);
+                width: 4rem;
+                height: 4rem;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .firstgridmargins{
+                margin: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .navfont:hover {
+                text-decoration: underline; 
+            }
+
+            .duitauteirure{
+                margin: 1rem 0rem;
+                font-weight: 700;
+                font-family: sans-serif;
+                font-size: 1.3rem;
+            }
+
+            .textinfirstgrid{
+                font-family: sans-serif;
+                font-size: 0.8rem;
+                color: #535353;
+            }
+
+            .undervideo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 3rem;
+            }
+
+            .videotittle{
+                font-family: sans-serif;
+                font-weight: 700;
+                font-size: 1.5rem;
+            }
+
+            .videodiv{
+                margin: 8% 0% 0% 0%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .undervideotittle{
+                font-family: sans-serif;
+                font-size: 80%;
+                margin: 1rem 0rem;
+                width: 27%;
+                color: #464646;
+            }
+
+            .line{
+                width: 60rem;
+                height: 0.05rem;
+                background-color: #979797;
+                margin: 0rem;
+            }
+
+            .line1{
+                display: flex;
+                justify-content: center;
+            }
+
+            .secondfourdivs{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(1, 18rem);
+                gap: 3rem;
+                margin: 0% 10%;
+                position: relative;
+            }
+
+            .recentwork{
+                font-family: sans-serif;
+                color: #000000;
+                font-weight: 700;
+                font-size: 1.5rem;
+                margin: 8% 0%;
+                gap: 1%;
+            }
+
+            .brand{
+                font-style: italic;
+                font-family: sans-serif;
+                color: #464646;
+                font-weight: 700;
+                font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #e2e2e2;
+            }
+
+            .video{
+                background-image: url(https://st2.depositphotos.com/3396639/9780/i/600/depositphotos_97801392-stock-photo-female-hands-holding-mobile-phone.jpg);
+                background-position: center;
+                background-size: cover;
+                width: 30rem;
+                height: 20rem;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .videoicon{
+                background-image: url(https://cdn3.iconfinder.com/data/icons/iconic-1/32/play_alt-512.png);
+                width: 5rem;
+                height: 5rem;
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                opacity: 0.7;
+            }
+
+            .recentworkdiv{
+                display: flex;
+                justify-content: center;
+            }
+
+            .brandproject{
+                width: 10rem;
+                height: 3rem;
+                border-color: #000000;
+                border-width: 0rem;
+                color: #ffffff;
+                background-color: #464646;
+                font-family: sans-serif;
+                font-size: 1rem;
+            }
+
+            .forbutton{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: flex-end;
+                display: flex;
+            }
+
+            .join{
+                font-family: sans-serif;
+                color: #000000;
+                font-weight: 700;
+                font-size: 1.5rem;
+                margin: 4rem 1rem 0rem 1rem;
+            }
+
+            .subscribediv{
+                margin-top: 8%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #e7e7e7;
+            }
+
+            .underjoin{
+                font-family: sans-serif;
+                font-size: 80%;
+                margin: 1rem 0rem;
+                color: #464646;
+            }
+
+            .clickfor{
+                width: 15rem;
+                height: 2.5rem;
+                border-color: #000000;
+                border-radius: 30px;
+                border-width: 0.1rem;
+                margin: 1rem 1rem 4rem 1rem;
+                font-family: sans-serif;
+            }
+
+            .messengers{
+                margin: 5% 0%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .facebook{
+                background-image: url(https://image.flaticon.com/icons/png/512/59/59439.png);
+            }
+
+            .size{
+                border-color: #000000;
+                border-width: 0.1rem;
+                border-style: solid;
+                width: 3rem;
+                height: 3rem;
+                background-position: center;
+                background-size: cover;
+                margin: 0rem 1rem;
+                background-size: 2rem;
+                background-repeat: no-repeat;
+            }
+
+            .twitter{
+                background-image: url(https://img.icons8.com/ios/452/twitter--v1.png);
+            }
+
+            .instagram{
+                background-image: url(https://img.icons8.com/ios/452/instagram-new--v1.png);
+            }
+
+            .google{
+                background-image: url(https://i.pinimg.com/originals/9c/85/47/9c8547399c1e4dd14e1a30f3e05d179a.png);
+            }
+
+            .size:hover {
+                background-color: #2297f7;
+            }
+
+            .lowernav{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                gap: 10%;
+                margin: 0% 10%;
+            }
+
+            .navflex{
+                display: flex;
+                flex-direction: column;
+                margin: 4rem 0rem;
+            }
+
+            .navtittle{
+                font-size: 0.8rem;
+                font-weight: 700;
+                font-family: sans-serif;
+                color: #ffffff;
+                margin-bottom: 1rem;
+
+            }
+
+            .navbackground{
+                background-color: #3d3d3d;
+            }
+
+            .navtext{
+                color: #d8d8d8;
+                font-size: 0.7rem;
+                font-family: sans-serif;
+                margin-bottom: 0.5rem;
+            }
+
+            body{
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="minima">Minima</div>
+            <div class="nav">
+                <div class="navfont">Services</div>
+                <div class="navfont">Our Story</div>
+                <div class="navfont">Work</div>
+                <div class="navfont">Journal</div>
+                <div class="navfont">Contact</div>
+            </div>
+        </div>
+        <div class="picture">
+            <div class="cleanminimal">Minima Clean & Minimal Template</div>
+            <div class="exepteur">exepteur sint occaecat cupidatat proident</div>
+            <button class="stayhere">Start here →</button>
+        </div>
+        <div class="firstgrid">
+            <div class="firstgridmargins">
+                <div class="one"></div>
+                <div class="duitauteirure">DUIT AUTE IRURE</div>
+                <div align="center" class="textinfirstgrid">exepteur sint occaecat cupi datat non it proi-dent sunt in culpa qui officia dese runtorn molilt anim id est laborum.</div>
+            </div>
+            <div class="firstgridmargins">
+                <div class="two"></div>
+                <div class="duitauteirure">DUIT AUTE IRURE</div>
+                <div align="center" class="textinfirstgrid">exepteur sint occaecat cupi datat non it proi-dent sunt in culpa qui officia dese runtorn molilt anim id est laborum.</div>
+            </div>
+            <div class="firstgridmargins">
+                <div class="three"></div>
+                <div class="duitauteirure">DUIT AUTE IRURE</div>
+                <div align="center" class="textinfirstgrid">exepteur sint occaecat cupi datat non it proi-dent sunt in culpa qui officia dese runtorn molilt anim id est laborum.</div>
+            </div>
+        </div>
+        <div class="line1">
+            <div align="center" class="line"></div>
+        </div>
+            <div class="undervideo">
+                <div class="videotittle">SUIT IN CULPA QUI OFFCIA DESERUNT MOLLIT</div> 
+                <div align="center" class="undervideotittle">exepteur sint occaecat cupi datat non it proi-dent sunt in culpa qui officia dese runtorn molilt anim id est laborum.</div>
+            </div>
+            <div class="videodiv">
+                <div class="video">
+                    <div class="videoicon"></div>
+                </div>
+            </div>
+            <div class="secondbigdiv">
+                <div class="recentworkdiv">
+                    <div class="recentwork">RECENT WORK</div>
+                </div>
+                <div class="secondfourdivs">
+                    <div class="brand">BRAND</div>
+                    <div class="brand">BRAND</div>
+                    <div class="brand">BRAND</div>
+                    <div class="brand">BRAND</div>
+                    <div class="forbutton">
+                        <button class="brandproject">Brand Project →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribediv">
+            <div class="join">JOIN OUR SUBSCRIBERS</div>
+            <div class="underjoin">10000 sint occaecat cupidatal non proident sunt in culpa qui officia</div>
+            <button class="clickfor">CLICK HERE TO SUBSCRIBE</button>
+        </div>
+        <div class="messengers">
+            <div class="facebook size"></div>
+            <div class="twitter size"></div>
+            <div class="instagram size"></div>
+            <div class="google size"></div>
+        </div>
+        <div class="navbackground">
+            <div class="lowernav">
+                <div class="navflex">
+                    <div class="navtittle">Location</div>
+                    <div class="navtext">1401 South Grand Avenue</div>
+                    <div class="navtext"> Angeles, CA 90015</div>
+                    <div class="navtext">(213) 748-2411</div>
+                    <div class="navtext"><u>see it in the map →</u></div>
+                </div>
+                <div class="navflex">
+                    <div class="navtittle">Company</div>
+                    <div class="navtext">Our story</div>
+                    <div class="navtext">Mission</div>
+                    <div class="navtext">Journal</div>
+                    <div class="navtext">Careers</div>
+                </div>
+                <div class="navflex">
+                    <div class="navtittle">Support</div>
+                    <div class="navtext">FAQ</div>
+                    <div class="navtext">Contact us</div>
+                    <div class="navtext">Policies</div>
+                </div>
+                <div class="navflex">
+                    <div class="navtittle">Minima</div>
+                    <div class="navtext">See do elusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                    <div class="navtext">Template made by <u>pixelhint.com</u></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

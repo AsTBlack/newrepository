@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <style>
+            .bigdiv{
+                margin: 0%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+            }
+
+            .divsize{
+                width: 3.3rem;
+                height: 2rem;
+                margin: 1rem;
+                border-top-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+            }
+
+            .color1{
+                background-color: #7977ff;
+                animation: download1 2s infinite;
+            }
+
+            .color2{
+            background-color: #ff77ab;
+            animation: download2 2s infinite;
+            }
+
+            .color3{
+                background-color: #fff177;
+                animation: download3 2s infinite;
+            }
+
+            @keyframes download1 {
+                0% {
+                    transform: scale(1);
+                }
+
+                25% {
+                    transform: scale(1.2);
+                }
+
+                50% {
+                    transform: scale(1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            @keyframes download2 {
+                0% {
+                    transform: scale(1);
+                }
+                
+                25% {
+                    transform: scale(1);
+                }
+
+                50%{
+                    transform: scale(1.2);
+                }
+
+                75% {
+                    transform: scale(1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            @keyframes download3 {
+                0% {
+                    transform: scale(1);
+                }
+
+                50%{
+                    transform: scale(1);
+                }
+
+                75%{
+                    transform: scale(1.2);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bigdiv">
+            <div class="divsize color1"></div>
+            <div class="divsize color2"></div>
+            <div class="divsize color3"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+            .design{
+                width: 20rem;
+                height: 5rem;
+                border-color: #00052e;
+                border-style: solid;
+                border-width: 0.2rem;
+                background-color: #9ffffa;
+                font-family: sans-serif;
+                font-weight: 700;
+                font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .main{
+                position: relative;
+            }
+
+            .list{
+                position: absolute;
+                top: 0;
+                opacity: 0;
+                max-height: 0;
+                transition: all 3s ease;
+                
+            }
+
+            .main:hover .list{
+                opacity: 100%;
+                max-height: 25rem;
+            }
+
+            .minheight{
+                opacity: 0;
+                max-height: 0;
+                transition: all 3s ease;
+            }
+
+            .main:hover .minheight {
+                max-height: 5rem;
+                opacity: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="main design">Characters
+                <div class="list minheight1">
+                    <div class="design minheight"><p class="minheight">Harry Potter</p></div>
+                    <div class="design minheight"><p class="minheight">Hermione Granger</p></div>
+                    <div class="design minheight"><p class="minheight">Ronald Weasley</p></div>
+                    <div class="design minheight"><p class="minheight">Sirius Black</p></div>
+                    <div class="design minheight"><p class="minheight">Remus Lupin</p></div>
+                </div>
+            </div>
+            </div>
+        <div>dhfiuhsgish</div>
+    </body>
+</html>

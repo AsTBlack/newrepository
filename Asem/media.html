@@ -1,0 +1,257 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+            }
+
+            .firstdiv{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #e7e6e6;
+                padding: 0.5rem 0rem;
+            }
+
+            .dot{
+                background-color: #000000;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                border-width: 1rem;
+            }
+
+            .bigdot{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #69696970;
+                border-width: 0;
+                border-radius: 50%;
+                width: 3rem;
+                height: 3rem;
+                margin-left: 4rem;
+            }
+
+            .accessories{
+                font-weight: 700;
+                font-family: sans-serif;
+                margin-right: 0.5rem;
+            }
+
+            .onetwothree{
+                font-family: sans-serif;
+                font-weight: 700;
+                margin: 3rem;
+                font-size: 1.5rem;
+                letter-spacing: 0.3rem;
+                display: flex;
+                justify-content: center;
+            }
+
+            .bigbag{
+                background-image: url(img1.png);
+                width: 100%;
+                height: 35rem;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .case{
+                width: 100%;
+                font-family: sans-serif;font-size: 1.5rem;
+                padding: 1rem 0rem;
+                border-color: #b3b3b3;
+                border-style: solid;
+                border-width: 0.1rem;
+                border-left: none;
+                border-right: none;
+                margin: 1.5rem 0rem;
+            }
+
+            .casesgrid{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                gap: 2rem;
+            }
+
+            .imgsize{
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 35rem;
+            }
+
+            .img1{
+                background-image: url(case1.png);
+            }
+
+            .img2{
+                background-image: url(case2.png);
+            }
+
+            .img3{
+                background-image: url(case3.png);
+            }
+
+            .casestext1{
+                font-family: sans-serif;
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin: 2rem 1rem 0.3rem 1rem;
+            }
+
+            .casestext2{
+                font-family: sans-serif;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: #b4b4b4;
+                margin: 0rem 1rem 1rem 1rem;
+            }
+
+            .bigimage{
+                background-image: url(img2.png);
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 35rem;
+                margin: 2rem 0rem;
+            }
+
+            .loremipsum{
+                font-family: sans-serif;
+                font-size: 2rem;
+                margin: 0rem 1rem;
+            }
+
+            .readmore{
+                border-style: none;
+                color: #a5a5a5;
+                text-decoration: underline;
+                font-size: 1.5rem;
+                margin: 1rem;
+                padding: 0rem;
+                background-color: #00000000;
+            }
+
+            .lowernav{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3rem;
+                padding: 2rem 0rem;
+                background-color: #ebebeb;
+            }
+
+            .lowernavtext{
+                font-family: sans-serif;
+                font-weight: 700;
+                margin: 0rem 1rem;
+                font-size: 1.2rem;
+            }
+
+            .smallline{
+                width: 0.15rem;
+                height: 1.4rem;
+                background-color: #000000;
+            }
+
+            @media (max-width: 600px){
+                .accessories{
+                    display: none;
+                }
+
+                .bigdot{
+                    margin: 0;
+                }
+
+                .firstdiv{
+                    justify-content: center;
+                }
+
+                .onetwothree{
+                    text-align: center;
+                }
+
+                .bigbag{
+                    width: 100%;
+                    height: 15rem;
+                }
+
+                .casesgrid{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .imgsize{
+                    width: 100%;
+                    height: 50rem;
+                }
+
+                .imgdivssize{
+                    margin-bottom: 1rem;
+                }
+
+                .bigimage{
+                    width: 100%;
+                    height: 15rem;
+                }
+
+                .loremipsum{
+                    font-size: 1rem;
+                }
+
+                .readmore{
+                    font-size: 0.8rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="firstdiv">
+            <div class="bigdot">
+                <div class="dot"></div>
+            </div>
+            <div class="accessories">LIFESTYLE ACCESSORIES WITHA DOWN TO EARTH</div>
+        </div>
+        <div class="onetwothree">ONE BAG, 2PACK, THREE WAYS.</div>
+        <div class="bigbag"></div>
+        <div class="case">IPHONE CASES</div>
+        <div class="casesgrid">
+            <div class="imgdivssize">
+                <div class="img1 imgsize"></div>
+                <div class="casestext1">SPORT IPHONE 5 CASE</div>
+                <div class="casestext2">HERITAGE</div>
+            </div>
+            <div class="imgdivssize">
+                <div class="img2 imgsize"></div>
+                <div class="casestext1">IPHONE FOLD WALLET</div>
+                <div class="casestext2">SMOKE</div>
+            </div>
+            <div class="imgdivssize">
+                <div class="img3 imgsize"></div>
+                <div class="casestext1">DRAW IPHONE CASE</div>
+                <div class="casestext2">STAND / HERITAGE</div>
+            </div>
+        </div>
+        <div>
+            <div class="bigimage"></div>
+            <div class="loremipsum">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage</div>
+            <button class="readmore">Read more</button>
+        </div>
+        <div class="lowernav">
+            <a>
+                <div class="lowernavtext">Terms</div>
+            </a>
+            <div class="smallline"></div>
+            <a>
+                <div class="lowernavtext">Privacy</div>
+            </a>
+            <div class="smallline"></div>
+            <a>
+                <div class="lowernavtext">Unsubscribe</div>
+            </a>
+        </div>
+    </body>
+</html>

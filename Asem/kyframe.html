@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            .design{
+                width: 20rem;
+                height: 5rem;
+                border-color: #00052e;
+                border-style: solid;
+                border-width: 0.2rem;
+                background-color: #9ffffa;
+                font-family: sans-serif;
+                font-weight: 700;
+                font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0.5rem;
+            }
+
+            .main:active{
+                animation: move 3s forwards;
+            }
+
+            @keyframes move{
+                0%{
+                    margin-left: 0;
+                    background-color: #9ffffa;
+                }
+
+                50%{
+                    margin-left: 20rem; 
+                    margin-top: 0rem;
+                    background-color: #9fff9f;
+                }
+
+                100%{
+                    margin-top: 20rem;
+                    margin-left: 20rem;
+                    background-color: #ffe59f;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main design">Keyframe</div>
+    </body>
+</html>
