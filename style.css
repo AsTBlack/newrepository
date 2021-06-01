@@ -1,1 +1,226 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+}
+
+.firstbigdiv {
+  background-image: url(https://blogs.esa.int/space19plus/files/2019/03/nebula.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fametext {
+  color: #2e9c2a;
+  font-weight: 700;
+  font-size: 2rem;
+  font-style: italic;
+  margin-left: 6rem;
+}
+
+.navtext {
+  color: #ffffff;
+  margin: 1.5rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+.family {
+  font-family: sans-serif;
+}
+
+.alltopnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 6rem;
+}
+
+.divinbigdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theway {
+  color: #fff;
+}
+
+.thewaytext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+  font-stretch: condensed;
+}
+
+.success {
+  color: #06b300;
+  margin-left: 0.6rem;
+}
+
+.loremipsum {
+  color: #fff;
+  margin: 1.5rem;
+  font-size: 1.7rem;
+  width: 40rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+.twobuttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button {
+  width: 10rem;
+  height: 3rem;
+  margin: 0rem 0.05rem;
+  font-size: 1.2rem;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0;
+  border-radius: 0.2rem;
+}
+
+.bstyle1 {
+  background-color: #06b300;
+  color: #fff;
+}
+
+.bstyle2 {
+  color: #797979;
+}
+
+.dots {
+  background-color: #ffffff00;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin: 2rem 0.2rem;
+  border-color: #ffffff;
+  border-width: 0.1rem;
+  border-style: solid;
+}
+
+.dots1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.dots:focus {
+  background-color: #ffffff;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  margin: 0rem 8rem;
+  gap: 3rem;
+}
+
+.secondbigdiv {
+  width: 100%;
+}
+
+.griddiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5rem 0rem 1rem 0rem;
+}
+
+.imgsize {
+  width: 5rem;
+  height: 5rem;
+  background-color: #1d9100;
+}
+
+.gridtittle {
+  font-size: 1rem;
+  color: #5e5e5e;
+  font-stretch: condensed;
+  margin: 1rem;
+}
+
+.loremipsum2 {
+  color: #5e5e5e;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.img3 {
+  background-image: url(wordpress-simple-brands.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img1 {
+  background-image: url(magic-solid.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img2 {
+  background-image: url(gift-solid.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=style.css.map */
