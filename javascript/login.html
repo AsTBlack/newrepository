@@ -5,34 +5,39 @@
             let res1="As_T";
             let res2="qwerty123";
             let a=prompt("Username");
+            let b;
             let n=1;
             let f=1;
-            while (n<3){
-                if(a==res1){
-                    let b=prompt("Password");
-                    while (f<3) {
-                    if (b==res2) {
-                        alert("correct")
+            while (n<=3){
+                if(a==res1) {
+                    b=prompt("Password")
+                    while (f<=3) {
+                        if (b==res2) {
+                            alert("correct");
+                            break
+                        }
+                        else{
+                            if(f == 3) break;
+                            alert("try again");
+                            b=prompt("Password");
+                        }
+                        f++;
                     }
-                    else{
-                        alert("try again");
-                        let b=("Password");
-                    };
-                    f++;
+                    if (f==3 && b!=res2) {
+                        alert("You have been blocked");
                     }
-                    if (f=3) {
-                    alert("You have been blocked")
-                    };
+                    break;
                 }
                 else{
+                    if(n == 3) break;
                     alert("try again");
-                    let a=prompt("Username");
+                    a=prompt("Username");
                 }
                 n++;
             }
-            if (n=3) {
-                alert("You have been blocked")
-            };
+            if (n==3 && a!=res1) {
+                alert("You have been blocked");
+            }
         </script>
     </body>
 </html>
