@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function square(a, b, c) {
+                let d=b**2-4*a*c
+                let x;
+                if(d>0) {
+                    x=(-b+d**0.5)/(2*a)
+                    return x
+                }
+                if (d==0) {
+                    х=(-b)/(2*a)
+                    return x
+                }
+                if (d<0) {
+                    return "корней нет"
+                }
+            }
+            let m=square(3, -14, -5)
+            alert(m)
+        </script>
+    </body>
+</html>
