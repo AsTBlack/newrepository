@@ -2,14 +2,18 @@
     <head></head>
     <body>
         <script>
+            function swap(arr, i, j) {
+                let a=arr[i]
+                arr[i]=arr[j]
+                arr[j]=a
+            }
+
             let arr=[6, 5, 20, 14, 8]; 
             let tmp=0
             for (let i=0; i<arr.length; i++) {
                 for (let j=0; j<arr.length-1; j++) {
                     if (arr[j]>arr[j+1]) {
-                        let tmp=arr[j]
-                        arr[j]=arr[j+1]
-                        arr[j+1]=tmp
+                        swap (arr, j, j+1)
                     }
                 }
             }
