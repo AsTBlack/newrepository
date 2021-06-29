@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="jquery-3.6.0.min.js"></script>
+        <style>
+            .olololo {
+                font-size: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: sans-serif;
+                height: 10rem;
+                width: 26rem;
+                margin: 1.5rem;
+                background-color: #89ffeb;
+                border-color: #00816c;
+                border-radius: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="olololo smaller">Smaller size</button>
+        <button class="olololo bigger">Bigger size</button>
+        <script>
+            $('.bigger').on ('click', event => {
+                $('smaller').css ('font-size', '1rem')
+            })
+        </script>
+    </body>
+</html>
