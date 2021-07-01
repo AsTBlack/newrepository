@@ -8,21 +8,40 @@
                 align-items: center;
                 justify-content: center;
                 font-family: sans-serif;
-                height: 10rem;
-                width: 26rem;
+                height: 12rem;
+                width: 30rem;
                 margin: 1.5rem;
                 background-color: #89ffeb;
                 border-color: #00816c;
                 border-radius: 2rem;
             }
+
+            .main {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+            }
         </style>
     </head>
     <body>
-        <button class="olololo smaller">Smaller size</button>
-        <button class="olololo bigger">Bigger size</button>
+        <div class="main">
+            <button class="olololo smaller">Smaller size</button>
+            <button class="olololo bigger">Bigger size</button>
+        </div>
+        
         <script>
+            $('.smaller').on ('click', event => {
+                $('.smaller').css(
+                    'font-size', '1rem'
+                    );
+            })
             $('.bigger').on ('click', event => {
-                $('smaller').css ('font-size', '1rem')
+                $('.bigger').css (
+                    'font-size', '5rem'
+                )
             })
         </script>
     </body>

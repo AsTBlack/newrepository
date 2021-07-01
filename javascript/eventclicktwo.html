@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <script  src="jquery-3.6.0.min.js"></script>
+        <style>
+            .olololo {
+                font-size: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: sans-serif;
+                height: 4rem;
+                width: 7rem;
+                margin: 1.5rem;
+                background-color: #89ffeb;
+                border-color: #00816c;
+                border-radius: 2rem;
+                margin: 1rem;
+            }
+            .text {
+                font-size: 3rem;
+                font-family: sans-serif;
+                color: #ff0156;
+
+            }
+
+            .main {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 50%;
+            }
+
+            .buttons {
+                display: flex;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="text">Text</div>
+            <div class="buttons">
+                <button class="olololo smaller">Smaller</button>
+                <button class="olololo bigger">Bigger</button>
+            </div>
+        </div>
+
+        <script>
+            
+
+            $('.smaller').on ('click', event => {
+                let s=$('.text').css('font-size')
+                s=s.slice(0, 2)
+                s=s-1
+                s=s+"px"
+                $('.text').css(
+                    'font-size', s 
+                    )
+            })
+            $('.bigger').on ('click', event => {
+                let s=$('.text').css('font-size')
+                s=s.slice(0, 2)
+                s++
+                s=s+"px"
+                $('.text').css(
+                    'font-size', s 
+                    )
+            })
+        </script>
+    </body>
+</html>
